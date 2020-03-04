@@ -7,6 +7,19 @@ export interface GameInterface {
   currentPrice: number;
 }
 
+export interface UserInterface {
+  id: string;
+  name: string;
+}
+
+export interface GameReviewInterface {
+  id: string;
+  reviews: {
+    rating: number;
+    userId: string;
+  }[];
+}
+
 export enum Options {
   POPULARITY = "POPULARITY",
   PRICE_ASCENDING = "PRICE_ASCENDING",
