@@ -1,24 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Game from "./components/Game";
+import "./App.css";
+import games from "./data/games.json";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="vertical app">
+      <div className="select">
+        <label htmlFor="change-order">Order by:&nbsp;</label>
+        <select id="change-order">
+          <option>Popularity</option>
+          <option>Price: low to high</option>
+          <option>Price: high to low</option>
+        </select>
+      </div>
+      <ul className="games">
+        {games.data.map(game => (
+          <li key={game.id}>
+            <Game game={game} />
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
