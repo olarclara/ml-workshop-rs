@@ -1,0 +1,164 @@
+{
+  "data": [
+    {
+      "id": "53a92fe7-49bf-44dc-89ad-6d501b329d09",
+      "slug": "donkey-kong-country-tropical-freeze",
+      "title": "Donkey Kong Country: Tropical Freeze",
+      "imageUrl": "https://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_5/SQ_NSwitch_DonkeyKongCountryTropicalFreeze_image500w.jpg",
+      "releaseDateOrder": "2018-05-03",
+      "currentPrice": 49.88
+    },
+    {
+      "id": "fff927a0-2a11-4f77-91b7-441638d208cf",
+      "slug": "the-legend-of-zelda-breath-of-the-wild",
+      "title": "The Legend of Zelda: Breath of the Wild",
+      "imageUrl": "https://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/wii_u_20/SQ_WiiU_TheLegendOfZeldaBreathOfTheWild_image500w.jpg",
+      "releaseDateOrder": "2017-03-03",
+      "currentPrice": 49.88
+    },
+    {
+      "id": "991127a3-16f1-456e-8e29-e39c77241c28",
+      "slug": "nine-parchments",
+      "title": "Nine Parchments",
+      "imageUrl": "https://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_download_software/SQ_NSwitchDS_NineParchments_image500w.jpg",
+      "releaseDateOrder": "2017-12-05",
+      "currentPrice": 5.09
+    },
+    {
+      "id": "abe7947f-589a-42d8-892e-d67caab7d4e0",
+      "slug": "mario-kart-8-deluxe",
+      "title": "Mario Kart 8 Deluxe",
+      "imageUrl": "https://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_5/SQ_NSwitch_MarioKart8Deluxe_image500w.jpg",
+      "releaseDateOrder": "2017-04-28",
+      "currentPrice": 49.88
+    },
+    {
+      "id": "3edef024-4ee2-4905-a96c-caaa0abb0b4a",
+      "slug": "stardew-valley",
+      "title": "Stardew Valley",
+      "imageUrl": "https://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_download_software/SQ_NSwitchDS_StardewValley_image500w.jpg",
+      "releaseDateOrder": "2017-10-05",
+      "currentPrice": 2.89
+    },
+    {
+      "id": "bfb2b182-6c50-4d64-b131-abef2f0044f1",
+      "slug": "super-bomberman-r",
+      "title": "Super Bomberman R",
+      "imageUrl": "https://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_5/SQ_NSwitch_SuperBombermanR_image500w.jpg",
+      "releaseDateOrder": "2017-03-03",
+      "currentPrice": 28.29
+    },
+    {
+      "id": "82baba5b-1f92-4054-8986-2594da8b5942",
+      "slug": "dark-souls-remastered",
+      "title": "Dark Souls: Remastered",
+      "imageUrl": "https://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_5/SQ_NSwitch_DarkSoulsRemastered_image500w.jpg",
+      "releaseDateOrder": "2018-10-18",
+      "currentPrice": 39.15
+    },
+    {
+      "id": "e89e1b00-771f-4dd5-b884-6a6dcdb62017",
+      "slug": "mario-tennis-aces",
+      "title": "Mario Tennis Aces",
+      "imageUrl": "https://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_5/SQ_NSwitch_MarioTennisAces_image500w.jpg",
+      "releaseDateOrder": "2018-06-22",
+      "currentPrice": 49.88
+    },
+    {
+      "id": "07d5c8cc-43a4-4b90-b4e4-1d47e0403cef",
+      "slug": "super-mario-odyssey",
+      "title": "Super Mario Odyssey",
+      "imageUrl": "https://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_5/SQ_NSwitch_SuperMarioOdyssey_Alt01_image500w.jpg",
+      "releaseDateOrder": "2017-10-27",
+      "currentPrice": 49.88
+    },
+    {
+      "id": "1b2c2af6-9298-4ac4-b263-8be6a76ccf9f",
+      "slug": "mario-rabbids-kingdom-battle",
+      "title": "Mario + Rabbids Kingdom Battle",
+      "imageUrl": "https://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_5/SQ_NSwitch_MarioAndRabbidsKingdomBattle_EU_image500w.jpg",
+      "releaseDateOrder": "2017-08-29",
+      "currentPrice": 33.26
+    },
+    {
+      "id": "3eba160c-19d8-4744-9f9f-3387dd8a2e18",
+      "slug": "naruto-shippuden-ultimate-ninja-storm-trilogy",
+      "title": "Naruto Shippuden: Ultimate Ninja Storm Trilogy",
+      "imageUrl": "https://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_download_software/SQ_NSwitchDS_NarutoShippudenUltimateNinjaStormTrilogy_image500w.jpg",
+      "releaseDateOrder": "2018-04-26",
+      "currentPrice": 18.71
+    },
+    {
+      "id": "b2c4d71b-22c5-44fa-9c91-1551ea329646",
+      "slug": "rocket-league",
+      "title": "Rocket League",
+      "imageUrl": "https://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_download_software/SQ_NSwitchDS_RocketLeague_image500w.jpg",
+      "releaseDateOrder": "2017-11-14",
+      "currentPrice": 8.39
+    },
+    {
+      "id": "e644bae0-e406-48c8-85b5-fb11a7be11c5",
+      "slug": "hollow",
+      "title": "Hollow",
+      "imageUrl": "https://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_download_software/SQ_NSwitchDS_Hollow_image500w.jpg",
+      "releaseDateOrder": "2018-02-22",
+      "currentPrice": 16.9
+    },
+    {
+      "id": "3915dcd2-2e89-4ef7-b1d8-07dd9cf3200a",
+      "slug": "splatoon-2",
+      "title": "Splatoon 2",
+      "imageUrl": "https://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_5/SQ_NSwitch_Splatoon2_image500w.jpg",
+      "releaseDateOrder": "2017-07-21",
+      "currentPrice": 49.88
+    },
+    {
+      "id": "a7ab518d-20eb-4e75-87e7-ec47e7abe75f",
+      "slug": "the-elder-scrolls-v-skyrim",
+      "title": "The Elder Scrolls V: Skyrim",
+      "imageUrl": "https://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_5/SQ_NSwitch_TheElderScrollsVSkyrim_image500w.jpg",
+      "releaseDateOrder": "2017-11-17",
+      "currentPrice": 52.91
+    },
+    {
+      "id": "557065e6-6b87-4c92-adc8-f3613328994c",
+      "slug": "overcooked-special-edition",
+      "title": "Overcooked Special Edition",
+      "imageUrl": "https://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_download_software/SQ_NSwitchDS_OvercookedSpecialEdition_image500w.jpg",
+      "releaseDateOrder": "2017-07-27",
+      "currentPrice": 19.99
+    },
+    {
+      "id": "dbece2fa-0702-45e5-a1ea-9eb21922b8c6",
+      "slug": "arms",
+      "title": "ARMS",
+      "imageUrl": "https://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_5/SQ_NSwitch_Arms_image500w.jpg",
+      "releaseDateOrder": "2017-06-16",
+      "currentPrice": 49.88
+    },
+    {
+      "id": "3d6d412a-292e-4268-9512-0b31fcd85927",
+      "slug": "sonic-mania",
+      "title": "Sonic Mania",
+      "imageUrl": "https://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_download_software/SQ_NSwitchDS_SonicMania_image500w.jpg",
+      "releaseDateOrder": "2017-08-15",
+      "currentPrice": 10.58
+    },
+    {
+      "id": "c72bf7d4-d53b-41eb-a466-5ce86874bf62",
+      "slug": "wizard-of-legend",
+      "title": "Wizard of Legend",
+      "imageUrl": "https://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_download_software/SQ_NSwitchDS_WizardOfLegend_image500w.jpg",
+      "releaseDateOrder": "2018-05-15",
+      "currentPrice": 13.7
+    },
+    {
+      "id": "85b21c04-32d5-4b74-9802-1a3c437b0de7",
+      "slug": "crash-bandicoot-n-sane-trilogy",
+      "title": "Crash Bandicoot N. Sane Trilogy",
+      "imageUrl": "https://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_5/SQ_NSwitch_CrashBandicootNSaneTrilogy_image500w.jpg",
+      "releaseDateOrder": "2018-06-29",
+      "currentPrice": 37.67
+    }
+  ]
+}
