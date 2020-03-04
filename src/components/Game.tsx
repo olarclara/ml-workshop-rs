@@ -1,20 +1,13 @@
 import React from "react";
+import { GameInterface } from "../types";
 import "./Game.css";
-
-interface GameInterface {
-  id: string;
-  slug: string;
-  title: string;
-  imageUrl: string;
-  releaseDateOrder: string;
-  currentPrice: number;
-}
 
 const Game = ({ game }: { game: GameInterface }) => (
   <div className="flex game">
     <img className="game-image" src={game.imageUrl} alt="" />
     <h3>{game.title}</h3>
-    <label>{`USD ${game.currentPrice}`}</label>
+    <p className="game-price">{`USD ${game.currentPrice}`}</p>
+    {/* <p className="game-release-date">{`Released on ${game.releaseDateOrder}`}</p> */}
   </div>
 );
 
