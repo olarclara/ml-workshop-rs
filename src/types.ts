@@ -5,6 +5,11 @@ export interface GameInterface {
   imageUrl: string;
   releaseDateOrder: string;
   currentPrice: number;
+  avgRating: string;
+  reviews: {
+    rating: number;
+    userId: string;
+  }[];
 }
 
 export interface UserInterface {
@@ -12,17 +17,8 @@ export interface UserInterface {
   name: string;
 }
 
-export interface GameReviewInterface {
-  id: string;
-  avgRating?: string;
-  reviews: {
-    rating: number;
-    userId: string;
-  }[];
-}
-
 export enum Options {
   POPULARITY = "POPULARITY",
   PRICE_ASCENDING = "PRICE_ASCENDING",
-  RELEASE_DATE = "RELEASE_DATE"
+  RATING = "RATING"
 }

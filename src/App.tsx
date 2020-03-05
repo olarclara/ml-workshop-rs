@@ -1,28 +1,8 @@
 import React, { useCallback, useState, ChangeEvent } from "react";
 import Game from "./components/Game";
-import { GameInterface, GameReviewInterface, Options } from "./types";
+import { GameInterface, Options } from "./types";
 import jsonGames from "./data/games.json";
-import jsonReviews from "./data/reviews.json";
 import "./App.css";
-
-const getGameReviews = (gameId: string): GameReviewInterface | undefined => {
-  const reviews = jsonReviews.data.find(reviewObj => reviewObj.id === gameId)
-    ?.reviews;
-  if (!reviews || !reviews.length) return undefined;
-
-  const avgRating = (
-    reviews.reduce((acc, curr) => {
-      acc += curr.rating;
-      return acc;
-    }, 0) / reviews.length
-  ).toFixed(2);
-
-  return {
-    id: gameId,
-    avgRating,
-    reviews
-  };
-};
 
 const selectOptions = [
   {
@@ -32,6 +12,10 @@ const selectOptions = [
   {
     label: "Price: low to high",
     value: Options.PRICE_ASCENDING
+  },
+  {
+    label: "Rating",
+    value: Options.RATING
   }
 ];
 
@@ -41,11 +25,15 @@ const App = () => {
   const updateGames = useCallback(
     (e: ChangeEvent<HTMLSelectElement>) => {
       const gamesData = games.slice(0);
-      const selectedOption = e.target.value;
+      const selectedOption = e.target.value as Options;
       const sortedGames =
         selectedOption === Options.POPULARITY
           ? jsonGames.data
-          : gamesData.sort((g1, g2) => g1.currentPrice - g2.currentPrice);
+          : selectedOption === Options.PRICE_ASCENDING
+          ? gamesData.sort((g1, g2) => g1.currentPrice - g2.currentPrice)
+          : gamesData.sort(
+              (g1, g2) => parseFloat(g2.avgRating) - parseFloat(g1.avgRating)
+            );
       setGames(sortedGames);
     },
     [games]
@@ -66,7 +54,7 @@ const App = () => {
       <ul className="games">
         {games.map(game => (
           <li key={game.id}>
-            <Game game={game} gameReviews={getGameReviews(game.id)} />
+            <Game game={game} />
           </li>
         ))}
       </ul>
