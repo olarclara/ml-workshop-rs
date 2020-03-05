@@ -4,6 +4,7 @@ import { GameInterface, Options, UserInterface } from "./types";
 import jsonGames from "./data/games.json";
 import jsonUsers from "./data/users.json";
 import randomIntFromInterval from "./utils/random-int-from-interval";
+import sortHelper from "./utils/sort-helper";
 import "./App.css";
 
 const selectOptions = [
@@ -24,12 +25,6 @@ const selectOptions = [
     value: Options.RECOMMENDED
   }
 ];
-
-const sortHelper = (games: GameInterface[], sortType: Options) => {
-  return sortType === Options.PRICE_ASCENDING
-    ? games.sort((g1, g2) => g1.currentPrice - g2.currentPrice)
-    : games.sort((g1, g2) => (g2.avgRating || 0) - (g1.avgRating || 0));
-};
 
 const App = () => {
   const [user, setUser] = useState<UserInterface>();
