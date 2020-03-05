@@ -1,5 +1,6 @@
 import { GameInterface, Options } from "../types";
 import groupReviewsByUser from "./group-reviews-by-user";
+import createGraph from "./create-graph";
 
 export default (games: GameInterface[], sortType: Options) => {
   switch (sortType) {
@@ -8,7 +9,7 @@ export default (games: GameInterface[], sortType: Options) => {
     case Options.RATING:
       return games.sort((g1, g2) => (g2.avgRating || 0) - (g1.avgRating || 0));
     case Options.RECOMMENDED:
-      console.log(groupReviewsByUser());
+      console.log(groupReviewsByUser(), createGraph());
       return games;
     default:
       return games;
