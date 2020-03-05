@@ -19,6 +19,12 @@ const selectOptions = [
   }
 ];
 
+const sortHelper = (games: GameInterface[], sortType: Options) => {
+  return sortType === Options.PRICE_ASCENDING
+    ? games.sort((g1, g2) => g1.currentPrice - g2.currentPrice)
+    : games.sort((g1, g2) => (g2.avgRating || 0) - (g1.avgRating || 0));
+};
+
 const App = () => {
   const [games, setGames] = useState<GameInterface[]>(jsonGames.data);
 
@@ -29,11 +35,7 @@ const App = () => {
       const sortedGames =
         selectedOption === Options.POPULARITY
           ? jsonGames.data
-          : selectedOption === Options.PRICE_ASCENDING
-          ? gamesData.sort((g1, g2) => g1.currentPrice - g2.currentPrice)
-          : gamesData.sort(
-              (g1, g2) => parseFloat(g2.avgRating) - parseFloat(g1.avgRating)
-            );
+          : sortHelper(gamesData, selectedOption);
       setGames(sortedGames);
     },
     [games]

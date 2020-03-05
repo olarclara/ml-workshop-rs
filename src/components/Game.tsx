@@ -7,7 +7,7 @@ const Game = ({ game }: { game: GameInterface }) => (
     <img className="game-image" src={game.imageUrl} alt="" />
     <h3>{game.title}</h3>
     <p className="game-price">{`USD ${game.currentPrice}`}</p>
-    <p>{`${game.avgRating} / 5`}</p>
+    <p>{`${game.avgRating || 'N/A'} / 5 (${game.reviews.length} reviews)`}</p>
   </div>
 );
 

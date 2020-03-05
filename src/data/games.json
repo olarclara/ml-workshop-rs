@@ -7,7 +7,7 @@
       "imageUrl": "https://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_5/SQ_NSwitch_DonkeyKongCountryTropicalFreeze_image500w.jpg",
       "releaseDateOrder": "2018-05-03",
       "currentPrice": 49.88,
-      "avgRating": "2.00",
+      "avgRating": 2.00,
       "reviews": [
         {
           "rating": 2,
@@ -22,7 +22,7 @@
       "imageUrl": "https://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/wii_u_20/SQ_WiiU_TheLegendOfZeldaBreathOfTheWild_image500w.jpg",
       "releaseDateOrder": "2017-03-03",
       "currentPrice": 49.88,
-      "avgRating": "1.57",
+      "avgRating": 1.57,
       "reviews": [
         {
           "rating": 0,
@@ -61,7 +61,7 @@
       "imageUrl": "https://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_download_software/SQ_NSwitchDS_NineParchments_image500w.jpg",
       "releaseDateOrder": "2017-12-05",
       "currentPrice": 5.09,
-      "avgRating": "2.50",
+      "avgRating": 2.50,
       "reviews": [
         {
           "rating": 1,
@@ -96,7 +96,7 @@
       "imageUrl": "https://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_5/SQ_NSwitch_MarioKart8Deluxe_image500w.jpg",
       "releaseDateOrder": "2017-04-28",
       "currentPrice": 49.88,
-      "avgRating": "1.88",
+      "avgRating": 1.88,
       "reviews": [
         {
           "rating": 3,
@@ -139,7 +139,7 @@
       "imageUrl": "https://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_download_software/SQ_NSwitchDS_StardewValley_image500w.jpg",
       "releaseDateOrder": "2017-10-05",
       "currentPrice": 2.89,
-      "avgRating": "2.67",
+      "avgRating": 2.67,
       "reviews": [
         {
           "rating": 4,
@@ -174,7 +174,7 @@
       "imageUrl": "https://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_5/SQ_NSwitch_SuperBombermanR_image500w.jpg",
       "releaseDateOrder": "2017-03-03",
       "currentPrice": 28.29,
-      "avgRating": "3.00",
+      "avgRating": 3.00,
       "reviews": [
         {
           "rating": 3,
@@ -193,7 +193,7 @@
       "imageUrl": "https://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_5/SQ_NSwitch_DarkSoulsRemastered_image500w.jpg",
       "releaseDateOrder": "2018-10-18",
       "currentPrice": 39.15,
-      "avgRating": "2.50",
+      "avgRating": 2.50,
       "reviews": [
         {
           "rating": 4,
@@ -236,7 +236,7 @@
       "imageUrl": "https://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_5/SQ_NSwitch_MarioTennisAces_image500w.jpg",
       "releaseDateOrder": "2018-06-22",
       "currentPrice": 49.88,
-      "avgRating": "2.43",
+      "avgRating": 2.43,
       "reviews": [
         {
           "rating": 1,
@@ -275,7 +275,7 @@
       "imageUrl": "https://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_5/SQ_NSwitch_SuperMarioOdyssey_Alt01_image500w.jpg",
       "releaseDateOrder": "2017-10-27",
       "currentPrice": 49.88,
-      "avgRating": "1.67",
+      "avgRating": 1.67,
       "reviews": [
         {
           "rating": 0,
@@ -310,7 +310,7 @@
       "imageUrl": "https://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_5/SQ_NSwitch_MarioAndRabbidsKingdomBattle_EU_image500w.jpg",
       "releaseDateOrder": "2017-08-29",
       "currentPrice": 33.26,
-      "avgRating": "3.00",
+      "avgRating": 3.00,
       "reviews": [
         {
           "rating": 3,
@@ -325,7 +325,7 @@
       "imageUrl": "https://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_download_software/SQ_NSwitchDS_NarutoShippudenUltimateNinjaStormTrilogy_image500w.jpg",
       "releaseDateOrder": "2018-04-26",
       "currentPrice": 18.71,
-      "avgRating": "2.00",
+      "avgRating": 2.00,
       "reviews": [
         {
           "rating": 0,
@@ -368,7 +368,7 @@
       "imageUrl": "https://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_download_software/SQ_NSwitchDS_RocketLeague_image500w.jpg",
       "releaseDateOrder": "2017-11-14",
       "currentPrice": 8.39,
-      "avgRating": "2.00",
+      "avgRating": 2.00,
       "reviews": [
         {
           "rating": 3,
@@ -399,7 +399,7 @@
       "imageUrl": "https://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_download_software/SQ_NSwitchDS_Hollow_image500w.jpg",
       "releaseDateOrder": "2018-02-22",
       "currentPrice": 16.9,
-      "avgRating": "1.88",
+      "avgRating": 1.88,
       "reviews": [
         {
           "rating": 4,
@@ -442,7 +442,7 @@
       "imageUrl": "https://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_5/SQ_NSwitch_Splatoon2_image500w.jpg",
       "releaseDateOrder": "2017-07-21",
       "currentPrice": 49.88,
-      "avgRating": "2.78",
+      "avgRating": 2.78,
       "reviews": [
         {
           "rating": 4,
@@ -489,7 +489,7 @@
       "imageUrl": "https://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_5/SQ_NSwitch_TheElderScrollsVSkyrim_image500w.jpg",
       "releaseDateOrder": "2017-11-17",
       "currentPrice": 52.91,
-      "avgRating": "2.80",
+      "avgRating": 2.80,
       "reviews": [
         {
           "rating": 3,
@@ -520,7 +520,6 @@
       "imageUrl": "https://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_download_software/SQ_NSwitchDS_OvercookedSpecialEdition_image500w.jpg",
       "releaseDateOrder": "2017-07-27",
       "currentPrice": 19.99,
-      "avgRating": "N/A",
       "reviews": []
     },
     {
@@ -530,7 +529,7 @@
       "imageUrl": "https://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_5/SQ_NSwitch_Arms_image500w.jpg",
       "releaseDateOrder": "2017-06-16",
       "currentPrice": 49.88,
-      "avgRating": "2.43",
+      "avgRating": 2.43,
       "reviews": [
         {
           "rating": 3,
@@ -569,7 +568,7 @@
       "imageUrl": "https://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_download_software/SQ_NSwitchDS_SonicMania_image500w.jpg",
       "releaseDateOrder": "2017-08-15",
       "currentPrice": 10.58,
-      "avgRating": "2.67",
+      "avgRating": 2.67,
       "reviews": [
         {
           "rating": 2,
@@ -592,7 +591,7 @@
       "imageUrl": "https://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_download_software/SQ_NSwitchDS_WizardOfLegend_image500w.jpg",
       "releaseDateOrder": "2018-05-15",
       "currentPrice": 13.7,
-      "avgRating": "1.20",
+      "avgRating": 1.20,
       "reviews": [
         {
           "rating": 1,
@@ -623,7 +622,7 @@
       "imageUrl": "https://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_5/SQ_NSwitch_CrashBandicootNSaneTrilogy_image500w.jpg",
       "releaseDateOrder": "2018-06-29",
       "currentPrice": 37.67,
-      "avgRating": "1.00",
+      "avgRating": 1.00,
       "reviews": [
         {
           "rating": 0,

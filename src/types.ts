@@ -5,7 +5,7 @@ export interface GameInterface {
   imageUrl: string;
   releaseDateOrder: string;
   currentPrice: number;
-  avgRating: string;
+  avgRating?: number;
   reviews: {
     rating: number;
     userId: string;
