@@ -14,6 +14,7 @@ export interface UserInterface {
 
 export interface GameReviewInterface {
   id: string;
+  avgRating?: string;
   reviews: {
     rating: number;
     userId: string;

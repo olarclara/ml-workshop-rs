@@ -1,13 +1,19 @@
 import React from "react";
-import { GameInterface } from "../types";
+import { GameInterface, GameReviewInterface } from "../types";
 import "./Game.css";
 
-const Game = ({ game }: { game: GameInterface }) => (
+const Game = ({
+  game,
+  gameReviews
+}: {
+  game: GameInterface;
+  gameReviews?: GameReviewInterface;
+}) => (
   <div className="flex game">
     <img className="game-image" src={game.imageUrl} alt="" />
     <h3>{game.title}</h3>
     <p className="game-price">{`USD ${game.currentPrice}`}</p>
-    {/* <p className="game-release-date">{`Released on ${game.releaseDateOrder}`}</p> */}
+    <p>{`${gameReviews?.avgRating || 0} / 5`}</p>
   </div>
 );
 

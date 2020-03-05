@@ -1,8 +1,28 @@
 import React, { useCallback, useState, ChangeEvent } from "react";
 import Game from "./components/Game";
-import { GameInterface, Options } from "./types";
-import json from "./data/games.json";
+import { GameInterface, GameReviewInterface, Options } from "./types";
+import jsonGames from "./data/games.json";
+import jsonReviews from "./data/reviews.json";
 import "./App.css";
+
+const getGameReviews = (gameId: string): GameReviewInterface | undefined => {
+  const reviews = jsonReviews.data.find(reviewObj => reviewObj.id === gameId)
+    ?.reviews;
+  if (!reviews || !reviews.length) return undefined;
+
+  const avgRating = (
+    reviews.reduce((acc, curr) => {
+      acc += curr.rating;
+      return acc;
+    }, 0) / reviews.length
+  ).toFixed(2);
+
+  return {
+    id: gameId,
+    avgRating,
+    reviews
+  };
+};
 
 const selectOptions = [
   {
@@ -16,7 +36,7 @@ const selectOptions = [
 ];
 
 const App = () => {
-  const [games, setGames] = useState<GameInterface[]>(json.data);
+  const [games, setGames] = useState<GameInterface[]>(jsonGames.data);
 
   const updateGames = useCallback(
     (e: ChangeEvent<HTMLSelectElement>) => {
@@ -24,7 +44,7 @@ const App = () => {
       const selectedOption = e.target.value;
       const sortedGames =
         selectedOption === Options.POPULARITY
-          ? gamesData
+          ? jsonGames.data
           : gamesData.sort((g1, g2) => g1.currentPrice - g2.currentPrice);
       setGames(sortedGames);
     },
@@ -46,7 +66,7 @@ const App = () => {
       <ul className="games">
         {games.map(game => (
           <li key={game.id}>
-            <Game game={game} />
+            <Game game={game} gameReviews={getGameReviews(game.id)} />
           </li>
         ))}
       </ul>
