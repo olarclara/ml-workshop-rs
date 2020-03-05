@@ -5,26 +5,8 @@ import jsonGames from "./data/games.json";
 import jsonUsers from "./data/users.json";
 import randomIntFromInterval from "./utils/random-int-from-interval";
 import sortHelper from "./utils/sort-helper";
+import selectOptions from "./constants/select-options";
 import "./App.css";
-
-const selectOptions = [
-  {
-    label: "Popularity",
-    value: Options.POPULARITY
-  },
-  {
-    label: "Price: low to high",
-    value: Options.PRICE_ASCENDING
-  },
-  {
-    label: "Rating",
-    value: Options.RATING
-  },
-  {
-    label: "Recommended",
-    value: Options.RECOMMENDED
-  }
-];
 
 const App = () => {
   const [user, setUser] = useState<UserInterface>();
