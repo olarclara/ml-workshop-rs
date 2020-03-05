@@ -17,6 +17,16 @@ export interface UserInterface {
   name: string;
 }
 
+export interface UserReviewInterface {
+  movieId: string;
+  rating: number;
+}
+
+export interface ReviewsByUserInterface {
+  userId: string;
+  reviews: UserReviewInterface[];
+}
+
 export enum Options {
   POPULARITY = "POPULARITY",
   PRICE_ASCENDING = "PRICE_ASCENDING",
