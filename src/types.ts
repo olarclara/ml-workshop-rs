@@ -20,5 +20,6 @@ export interface UserInterface {
 export enum Options {
   POPULARITY = "POPULARITY",
   PRICE_ASCENDING = "PRICE_ASCENDING",
-  RATING = "RATING"
+  RATING = "RATING",
+  RECOMMENDED = "RECOMMENDED"
 }
