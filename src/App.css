@@ -1,5 +1,13 @@
 .app {
-  padding: var(--spacing-l)
+  padding: var(--spacing-l);
+}
+
+.app-header {
+  align-items: center;
+}
+
+.app-header h2 {
+  margin: 0;
 }
 
 .select {
