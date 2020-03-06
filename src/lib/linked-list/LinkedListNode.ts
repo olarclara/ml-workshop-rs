@@ -1,5 +1,5 @@
-export default class LinkedListNode {
-  constructor(public value: any, public next?: LinkedListNode) {
+export default class LinkedListNode<T> {
+  constructor(public value: T, public next?: LinkedListNode<T>) {
     this.value = value;
     this.next = next;
   }
