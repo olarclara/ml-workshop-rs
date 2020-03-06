@@ -1,9 +1,9 @@
 import LinkedListNode from "./LinkedListNode";
 import Comparator from "../helpers/Comparator";
 
-export default class LinkedList {
-  public head?: LinkedListNode;
-  public tail?: LinkedListNode;
+export default class LinkedList<T> {
+  public head?: LinkedListNode<T>;
+  public tail?: LinkedListNode<T>;
   public compare: Comparator;
 
   constructor(comparatorFunction?: (a: any, b: any) => number) {
@@ -94,7 +94,7 @@ export default class LinkedList {
       return undefined;
     }
 
-    let currentNode: LinkedListNode | undefined = this.head;
+    let currentNode: LinkedListNode<T> | undefined = this.head;
     while (currentNode) {
       if (cb && cb(currentNode.value)) {
         return currentNode;
