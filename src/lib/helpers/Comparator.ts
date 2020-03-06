@@ -1,4 +1,4 @@
-import { StringOrNumber, ComparatorFn } from "./types";
+import { ComparatorFn } from "./types";
 
 export default class Comparator {
   private compare: ComparatorFn;
@@ -7,7 +7,7 @@ export default class Comparator {
     this.compare = compareFunction || Comparator.defaultCompareFunction;
   }
 
-  static defaultCompareFunction(a: StringOrNumber, b: StringOrNumber) {
+  static defaultCompareFunction(a: any, b: any) {
     if (a === b) {
       return 0;
     }
@@ -15,29 +15,28 @@ export default class Comparator {
     return a < b ? -1 : 1;
   }
 
-  equal(a: StringOrNumber, b: StringOrNumber) {
+  equal(a: any, b: any) {
     return this.compare(a, b) === 0;
   }
 
-  lessThan(a: StringOrNumber, b: StringOrNumber) {
+  lessThan(a: any, b: any) {
     return this.compare(a, b) < 0;
   }
 
-  greaterThan(a: StringOrNumber, b: StringOrNumber) {
+  greaterThan(a: any, b: any) {
     return this.compare(a, b) > 0;
   }
 
-  lessThanOrEqual(a: StringOrNumber, b: StringOrNumber) {
+  lessThanOrEqual(a: any, b: any) {
     return this.lessThan(a, b) || this.equal(a, b);
   }
 
-  greaterThanOrEqual(a: StringOrNumber, b: StringOrNumber) {
+  greaterThanOrEqual(a: any, b: any) {
     return this.greaterThan(a, b) || this.equal(a, b);
   }
 
   reverse() {
     const compareOriginal = this.compare;
-    this.compare = (a: StringOrNumber, b: StringOrNumber) =>
-      compareOriginal(b, a);
+    this.compare = (a: any, b: any) => compareOriginal(b, a);
   }
 }
