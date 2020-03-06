@@ -9,7 +9,9 @@ export default (games: GameInterface[], sortType: Options) => {
     case Options.RATING:
       return games.sort((g1, g2) => (g2.avgRating || 0) - (g1.avgRating || 0));
     case Options.RECOMMENDED:
-      console.log(groupReviewsByUser(), createGraph());
+      const reviewsByUser = groupReviewsByUser();
+      const reviewsGraph = createGraph(reviewsByUser);
+      console.log(reviewsGraph);
       return games;
     default:
       return games;
