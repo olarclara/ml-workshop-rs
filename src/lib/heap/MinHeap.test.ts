@@ -136,18 +136,17 @@ describe("MinHeap", () => {
     h.add(8);
     h.add(2);
     h.add(1);
-    console.log(h.toString());
 
     expect(h.toString()).toBe("1,2,4,6,3,5,6,10,8,7");
     expect(h.remove(8).toString()).toEqual("1,2,4,6,3,5,6,10,7");
     expect(h.remove(7).toString()).toEqual("1,2,4,6,3,5,6,10");
     expect(h.remove(1).toString()).toEqual("2,3,4,6,10,5,6");
-    // expect(h.remove(2).toString()).toEqual("3,6,4,6,10,5");
-    // expect(h.remove(6).toString()).toEqual("3,5,4,10");
-    // expect(h.remove(10).toString()).toEqual("3,5,4");
-    // expect(h.remove(5).toString()).toEqual("3,4");
-    // expect(h.remove(3).toString()).toEqual("4");
-    // expect(h.remove(4).toString()).toEqual("");
+    expect(h.remove(2).toString()).toEqual("3,6,4,6,10,5");
+    expect(h.remove(6).toString()).toEqual("3,5,4,10");
+    expect(h.remove(10).toString()).toEqual("3,5,4");
+    expect(h.remove(5).toString()).toEqual("3,4");
+    expect(h.remove(3).toString()).toEqual("4");
+    expect(h.remove(4).toString()).toEqual("");
   });
 
   it("should be possible to remove items from heap with custom finding comparator", () => {
