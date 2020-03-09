@@ -9,18 +9,22 @@ import selectOptions from "./constants/select-options";
 import "./App.css";
 
 const App = () => {
+  const userDB = React.useRef<UserInterface[]>(jsonUsers.data);
+  const sortSelect = React.useRef<HTMLSelectElement>(null);
   const [user, setUser] = useState<UserInterface>();
   const [games, setGames] = useState<GameInterface[]>(jsonGames.data);
 
   useEffect(() => {
-    const userDB = jsonUsers.data;
-    const randomUser = userDB[randomIntFromInterval(0, userDB.length - 1)];
+    const randomUser =
+      userDB.current[randomIntFromInterval(0, userDB.current.length - 1)];
     setUser(randomUser);
   }, []);
 
   const sortGames = useCallback(
-    (e: ChangeEvent<HTMLSelectElement>) => {
-      const selectedOption = e.target.value as Options;
+    (e?: ChangeEvent<HTMLSelectElement>) => {
+      const selectedOption = e
+        ? (e.target.value as Options)
+        : (sortSelect.current?.value as Options);
       const sortedGames =
         selectedOption === Options.POPULARITY
           ? jsonGames.data
@@ -30,13 +34,31 @@ const App = () => {
     [user]
   );
 
+  const selectUser = useCallback((e: ChangeEvent<HTMLSelectElement>) => {
+    const selectedId = e.target.value;
+    setUser(userDB.current.find(u => u.id === selectedId));
+  }, []);
+
+  useEffect(() => {
+    sortGames();
+  }, [sortGames, user]);
+
   return (
     <div className="vertical app">
       <header className="horizontal app-header">
-        <h2>{`Hello, ${user?.name || "gamer"}`}</h2>
-        <div className="select">
+        <span className="select-user">
+          <h2>Hello,&nbsp;</h2>
+          <select id="change-user" onChange={selectUser} value={user?.id}>
+            {userDB.current.map((user, index) => (
+              <option key={index.toString()} value={user.id}>
+                {user.name}
+              </option>
+            ))}
+          </select>
+        </span>
+        <div className="select-sort">
           <label htmlFor="change-order">Order by:&nbsp;</label>
-          <select id="change-order" onChange={sortGames}>
+          <select id="change-order" onChange={sortGames} ref={sortSelect}>
             {selectOptions.map((option, index) => (
               <option key={index.toString()} value={option.value}>
                 {option.label}

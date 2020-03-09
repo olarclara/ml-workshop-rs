@@ -10,8 +10,9 @@
   margin: 0;
 }
 
-.select {
-  align-self: flex-end;
+.select-user {
+  align-items: center;
+  display: flex;
 }
 
 .games {
