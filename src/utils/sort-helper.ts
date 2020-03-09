@@ -23,26 +23,24 @@ export default (
         .slice()
         .find(r => r.userId === userId)
         ?.reviews.map(r => r.gameId);
+
+      // Start by removing games that the user already reviewed.
+      let recommendedGames = games.filter(
+        g => !userReviewedGamesId?.includes(g.id)
+      );
+
+      // Create a graph that represent games, users and reviews.
       const reviewsGraph = createGraph(reviewsByUser);
+
+      // Apply Djikstra algorithm with current user's vertex as initial one.
       const shortestPaths = dijkstra(
         reviewsGraph,
         reviewsGraph.vertices[userId]
       ).distances;
-      const distances = Object.keys(shortestPaths)
-        .map(id => ({
-          id,
-          distance: shortestPaths[id]
-        }))
-        .sort((d1, d2) => d2.distance - d1.distance);
-      const sortedGames = distances
-        .map(d => {
-          const game = games.find(g => g.id === d.id);
-          return !userReviewedGamesId?.includes(d.id) ? game : undefined;
-        })
-        .filter(Boolean);
 
-      // @ts-ignore
-      return sortedGames;
+      return recommendedGames.sort(
+        (g1, g2) => shortestPaths[g1.id] - shortestPaths[g2.id]
+      );
     default:
       return games;
   }
