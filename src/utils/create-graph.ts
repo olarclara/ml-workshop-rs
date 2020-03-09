@@ -23,7 +23,7 @@ export default (edgeMap: ReviewsByUserInterface[]) => {
 
     const reviewEdges = curr.reviews
       .map(r => {
-        const movieVertix = vertices.find(v => v.getKey() === r.movieId);
+        const movieVertix = vertices.find(v => v.getKey() === r.gameId);
         if (!movieVertix) {
           return undefined;
         }

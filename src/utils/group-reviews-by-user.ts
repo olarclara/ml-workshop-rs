@@ -16,7 +16,7 @@ export default (): ReviewsByUserInterface[] =>
     const reviews = games.reduce((acc, game) => {
       const review = game.reviews.find(r => r.userId === userId);
       if (!review) return acc;
-      return [...acc, { movieId: game.id, rating: review?.rating }];
+      return [...acc, { gameId: game.id, rating: review?.rating }];
     }, [] as UserReviewInterface[]);
 
     return { userId, reviews };

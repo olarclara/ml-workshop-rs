@@ -18,7 +18,7 @@ export interface UserInterface {
 }
 
 export interface UserReviewInterface {
-  movieId: string;
+  gameId: string;
   rating: number;
 }
 
