@@ -14,21 +14,20 @@ const App = () => {
 
   useEffect(() => {
     const userDB = jsonUsers.data;
-    const randomUser = userDB[randomIntFromInterval(0, userDB.length)];
+    const randomUser = userDB[randomIntFromInterval(0, userDB.length - 1)];
     setUser(randomUser);
   }, []);
 
   const sortGames = useCallback(
     (e: ChangeEvent<HTMLSelectElement>) => {
       const selectedOption = e.target.value as Options;
-      const gamesData = games.slice(0);
       const sortedGames =
         selectedOption === Options.POPULARITY
           ? jsonGames.data
-          : sortHelper(gamesData, selectedOption, user?.id);
+          : sortHelper(jsonGames.data, selectedOption, user?.id);
       setGames(sortedGames);
     },
-    [games, user]
+    [user]
   );
 
   return (

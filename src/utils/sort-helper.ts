@@ -10,14 +10,17 @@ export default (
 ): GameInterface[] => {
   switch (sortType) {
     case Options.PRICE_ASCENDING:
-      return games.sort((g1, g2) => g1.currentPrice - g2.currentPrice);
+      return games.slice().sort((g1, g2) => g1.currentPrice - g2.currentPrice);
     case Options.RATING:
-      return games.sort((g1, g2) => (g2.avgRating || 0) - (g1.avgRating || 0));
+      return games
+        .slice()
+        .sort((g1, g2) => (g2.avgRating || 0) - (g1.avgRating || 0));
     case Options.RECOMMENDED:
       if (!userId) return games;
 
       const reviewsByUser = groupReviewsByUser();
       const userReviewedGamesId = reviewsByUser
+        .slice()
         .find(r => r.userId === userId)
         ?.reviews.map(r => r.gameId);
       const reviewsGraph = createGraph(reviewsByUser);
