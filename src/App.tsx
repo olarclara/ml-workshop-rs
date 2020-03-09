@@ -25,10 +25,10 @@ const App = () => {
       const sortedGames =
         selectedOption === Options.POPULARITY
           ? jsonGames.data
-          : sortHelper(gamesData, selectedOption);
+          : sortHelper(gamesData, selectedOption, user?.id);
       setGames(sortedGames);
     },
-    [games]
+    [games, user]
   );
 
   return (
