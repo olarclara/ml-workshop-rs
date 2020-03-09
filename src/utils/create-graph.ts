@@ -37,5 +37,6 @@ export default (edgeMap: ReviewsByUserInterface[]) => {
   }, [] as any[]);
 
   edges.forEach(e => graph.addEdge(e));
+
   return graph;
 };
