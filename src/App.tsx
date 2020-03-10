@@ -45,26 +45,29 @@ const App = () => {
 
   return (
     <div className="vertical app">
-      <header className="horizontal app-header">
-        <span className="select-user">
-          <h2>Hello,&nbsp;</h2>
-          <select id="change-user" onChange={selectUser} value={user?.id}>
-            {userDB.current.map((user, index) => (
-              <option key={index.toString()} value={user.id}>
-                {user.name}
-              </option>
-            ))}
-          </select>
-        </span>
-        <div className="select-sort">
-          <label htmlFor="change-order">Order by:&nbsp;</label>
-          <select id="change-order" onChange={sortGames} ref={sortSelect}>
-            {selectOptions.map((option, index) => (
-              <option key={index.toString()} value={option.value}>
-                {option.label}
-              </option>
-            ))}
-          </select>
+      <header className="flex">
+        <h1>Game Store</h1>
+        <div className="horizontal app-header">
+          <span className="select-user">
+            <h2>Hello,&nbsp;</h2>
+            <select id="change-user" onChange={selectUser} value={user?.id}>
+              {userDB.current.map((user, index) => (
+                <option key={index.toString()} value={user.id}>
+                  {user.name}
+                </option>
+              ))}
+            </select>
+          </span>
+          <div className="select-sort">
+            <label htmlFor="change-order">Order by:&nbsp;</label>
+            <select id="change-order" onChange={sortGames} ref={sortSelect}>
+              {selectOptions.map((option, index) => (
+                <option key={index.toString()} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
+            </select>
+          </div>
         </div>
       </header>
       <main>
