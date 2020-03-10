@@ -29,17 +29,22 @@ On both methods, the purpose remains the same: find similarities between items a
 
 ## 3. Graph Theory
 
-### 3.1 Djikstra
+### 3.1 The shortest-path problem
+
+- Djikstra
 
 ### 3.2 Real-word applications
 
 #### 3.2.1 Pixie: by Pinterest
 
-Resource: https://arxiv.org/pdf/1711.07601.pdf
+Resources:
+- https://arxiv.org/pdf/1711.07601.pdf
 
 #### 3.2.2 Neo4j
 
-Resource: https://neo4j.com/use-cases/real-time-recommendation-engine/
+Resources:
+- https://neo4j.com/use-cases/real-time-recommendation-engine/
+- https://medium.com/pinterest-engineering/an-update-on-pixie-pinterests-recommendation-system-6f273f737e1b
 
 ## 4. Challenges and concerns
 
