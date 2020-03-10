@@ -2,12 +2,10 @@ import GraphVertex from "./GraphVertex";
 import GraphEdge from "./GraphEdge";
 
 export default class Graph {
-  public vertices: { [key: string]: GraphVertex };
-  public edges: { [key: string]: GraphEdge };
+  public vertices: { [key: string]: GraphVertex } = {};
+  public edges: { [key: string]: GraphEdge } = {};
 
   constructor(public isDirected: boolean = false) {
-    this.vertices = {};
-    this.edges = {};
     this.isDirected = isDirected;
   }
 
