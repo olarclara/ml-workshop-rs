@@ -1,7 +1,7 @@
 import { GameInterface, Options } from "../types";
 import groupReviewsByUser from "./group-reviews-by-user";
 import createGraph from "./create-graph";
-import dijkstra from "../lib/djikstra/Djikstra";
+import dijkstra from "../lib/dijkstra/Dijkstra";
 
 export default (
   games: GameInterface[],

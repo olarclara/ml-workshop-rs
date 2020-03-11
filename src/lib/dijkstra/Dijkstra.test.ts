@@ -1,7 +1,7 @@
 import GraphVertex from "../graph/GraphVertex";
 import GraphEdge from "../graph/GraphEdge";
 import Graph from "../graph/Graph";
-import dijkstra from "./Djikstra";
+import dijkstra from "./Dijkstra";
 
 describe("dijkstra", () => {
   it("should find minimum paths to all vertices for undirected graph", () => {
