@@ -39,7 +39,7 @@ export default (
       ).distances;
 
       return recommendedGames.sort(
-        (g1, g2) => shortestPaths[g1.id] - shortestPaths[g2.id]
+        (g1, g2) => shortestPaths[g2.id] - shortestPaths[g1.id]
       );
     default:
       return games;
