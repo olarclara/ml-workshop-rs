@@ -41,6 +41,7 @@ export default (
       return recommendedGames.sort(
         (g1, g2) => shortestPaths[g2.id] - shortestPaths[g1.id]
       );
+    case Options.POPULARITY:
     default:
       return games;
   }

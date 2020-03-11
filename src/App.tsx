@@ -22,13 +22,9 @@ const App = () => {
 
   const sortGames = useCallback(
     (e?: ChangeEvent<HTMLSelectElement>) => {
-      const selectedOption = e
-        ? (e.target.value as Options)
-        : (sortSelect.current?.value as Options);
-      const sortedGames =
-        selectedOption === Options.POPULARITY
-          ? jsonGames.data
-          : sortHelper(jsonGames.data, selectedOption, user?.id);
+      const selectedOption = (e?.target.value ||
+        sortSelect.current?.value) as Options;
+      const sortedGames = sortHelper(jsonGames.data, selectedOption, user?.id);
       setGames(sortedGames);
     },
     [user]
